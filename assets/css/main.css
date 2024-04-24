@@ -4,7 +4,9 @@
 :root {
 	/* My color scheme*/
 	--lazurite: #4066ab;
+	--dark-lazurite: #152239;
 	--time-without-end: #308fb8;
+	--dark-time-without-end: #102e3c;
 	--peacock-stone: #26886b;
 	--turqouise: #3aabac;
 	--water-over-rocks: #b0dbcf;
@@ -12,6 +14,8 @@
 	--green-maple-leaves: #71b784;
 	--serow: #a7a493;
 	--white-birch: #e2e0cb;
+	--custom-gradient: rgba(25, 40, 67, 0.5);
+	--custom-gradient-2: rgba(15, 53, 42, 0.5);
 
 	/* Original Massively colors*/
 	--og-black: #1e252d;
@@ -27,13 +31,14 @@
 
 	/* Color organization */
 	/* Edit these for quick changes */
-	--hover-color: var(--peacock-stone);
+	--hover-color: var(--time-without-end);
 	--no-background-font-color: var(--white-birch);
-	--with-background-font-color: var(--og-black-2);
+	--with-background-font-color: var(--dark-time-without-end);
 	--paralax-background-color: var(--og-black-2);
-	--paralax-gradient-color: var(--og-gradient);
+	--paralax-gradient-color: var(--custom-gradient-2);
 	--willow-background-color: var(--white-birch);
 	--other-projects-background-color: var(--white-birch);
+	--other-projects-border-color: var(--dark-time-without-end);
 	--technologies-color: var(--lazurite);
 	--footer-icon-color: var(--serow);
 	--copyright-color: var(--og-gray-2);
@@ -3411,14 +3416,14 @@ input, select, textarea {
 		line-height: 1.5;
 		text-align: center;
 		text-transform: uppercase;
-		margin: 4rem auto 8rem auto;
+		margin: 1rem auto 8rem auto;
 		width: calc(100% - 4rem);
 		max-width: 72rem;
 		z-index: 2;
 	}
 
 		#copyright a {
-			color: inherit;
+			color: var(--copyright-color);
 		}
 
 		#copyright a:hover {
@@ -3448,7 +3453,7 @@ input, select, textarea {
 		@media screen and (max-width: 1280px) {
 
 			#copyright {
-				margin: 4rem auto;
+				margin: 1rem auto 4rem;
 			}
 
 		}
@@ -3626,6 +3631,9 @@ input, select, textarea {
 }
 
 .project img {
+	border-style: solid;
+	border-color: var(--other-projects-border-color);
+	border-width: 1px;
 	border-radius: 5px;
 }
 
