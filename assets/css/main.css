@@ -226,7 +226,7 @@ input, select, textarea {
 		font-family: "Roboto", Helvetica, sans-serif;
 		font-weight: 300;
 		font-size: 1.1rem;
-		line-height: 2.375;
+		line-height: 1.9;
 	}
 
 	a {
@@ -259,7 +259,7 @@ input, select, textarea {
 		font-family: "Source Sans Pro", Helvetica, sans-serif;
 		font-weight: 900;
 		line-height: 1.5;
-		letter-spacing: 0.075em;
+		letter-spacing: -0.015em;
 		margin: 0 0 1rem 0;
 	}
 
@@ -3626,7 +3626,7 @@ input, select, textarea {
 	margin: 0;
 }
 
-.project .image .fit {
+.project .image.fit {
 	margin: 1rem 0;
 }
 
