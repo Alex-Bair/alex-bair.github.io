@@ -14,6 +14,7 @@
 	--shade-of-trees: #aed3a0;
 	--green-maple-leaves: #71b784;
 	--serow: #a7a493;
+	--transparent-serow: #A7A493DB;
 	--white-birch: #e2e0cb;
 	--custom-gradient: rgba(25, 40, 67, 0.5);
 	--custom-gradient-2: rgba(15, 53, 42, 0.5);
@@ -42,7 +43,7 @@
 	--other-projects-border-color: var(--dark-time-without-end);
 	--technologies-color: var(--lazurite);
 	--footer-icon-color: var(--serow);
-	--copyright-color: var(--og-gray-2);
+	--copyright-color: var(--transparent-serow);
 
 	/* Individual component colors*/
 	--body-background: var(--og-black);
