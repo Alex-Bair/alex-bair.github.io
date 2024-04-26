@@ -3,11 +3,12 @@
 
 :root {
 	/* My color scheme*/
-	--lazurite: #4066ab;
+	--lazurite: #3b5d9d;
 	--dark-lazurite: #152239;
 	--time-without-end: #308fb8;
 	--dark-time-without-end: #102e3c;
 	--peacock-stone: #26886b;
+	--dark-peacock-stone: #164C3BFA;
 	--turqouise: #3aabac;
 	--water-over-rocks: #b0dbcf;
 	--shade-of-trees: #aed3a0;
@@ -3640,7 +3641,7 @@ input, select, textarea {
 .technologies {
 	color: var(--technologies-color);
 	text-align: center;
-	font-weight: 525;
+	/* font-weight: 550; */
 }
 
 #footer .links {
@@ -3657,4 +3658,18 @@ input, select, textarea {
 	#main, #projects {
 		border-radius: 0px;
 	}
+}
+
+.visually-hidden { 
+	border: 0;
+	padding: 0;
+	margin: 0;
+	position: absolute !important;
+	height: 1px; 
+	width: 1px;
+	overflow: hidden;
+	clip: rect(1px 1px 1px 1px); /* IE6, IE7 - a 0 height clip, off to the bottom right of the visible 1px box */
+	clip: rect(1px, 1px, 1px, 1px); /*maybe deprecated but we need to support legacy browsers */
+	clip-path: inset(50%); /*modern browsers, clip-path works inwards from each corner*/
+	white-space: nowrap; /* added line to stop words getting smushed together (as they go onto seperate lines and some screen readers do not understand line feeds as a space */
 }
