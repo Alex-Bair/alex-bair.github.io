@@ -3533,6 +3533,10 @@ input, select, textarea {
 	margin: auto;
 }
 
+#willow-architecture {
+	grid-area: architecture;
+}
+
 #willow-button {
 	grid-area: button;
 }
@@ -3540,10 +3544,11 @@ input, select, textarea {
 #willow-section {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
-	grid-template-rows: 100px 5fr 1fr;
+	grid-template-rows: 100px auto auto 1fr;
 	grid-template-areas: 
 	"header header"
 	"text logo"
+	"architecture architecture"
 	"button button";
 	column-gap: 10px;
 }
@@ -3556,11 +3561,12 @@ input, select, textarea {
 	#willow-section {
 		display: grid;
 		grid-template-columns: 1fr;
-		grid-template-rows: 1fr 100px auto 100px;
+		grid-template-rows: 1fr 100px auto auto 100px;
 		grid-template-areas: 
 		"logo"
 		"header"
 		"text"
+		"architecture"
 		"button";
 		column-gap: 10px;
 	}
@@ -3603,6 +3609,10 @@ input, select, textarea {
 		#main p {
 			margin-top: 0rem;
 		}
+
+	#willow-section {
+		grid-template-rows: 1fr 60px auto auto 100px;
+	}
 }
 
 #project-list {
